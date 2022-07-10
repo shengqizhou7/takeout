@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * 地址簿管理testtest
+ * 地址簿管理
  */
 @Slf4j
 @RestController
