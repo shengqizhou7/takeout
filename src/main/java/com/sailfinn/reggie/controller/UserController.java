@@ -9,6 +9,7 @@ import com.sailfinn.reggie.utils.ValidateCodeUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 @RestController
 @RequestMapping("/user")
@@ -25,6 +27,9 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private RedisTemplate redisTemplate;
 
     /**
      * send message verification code
@@ -45,7 +50,10 @@ public class UserController {
             //SMSUtils.sendMessage("瑞吉外卖","", phone, code);
 
             //save verification code in session
-            session.setAttribute(phone, code);
+            //session.setAttribute(phone, code);
+
+            //save verification code in redis and set expiration time
+            redisTemplate.opsForValue().set(phone, code, 5, TimeUnit.MINUTES);
 
             return R.success("Verification code sent!");
         }
@@ -70,7 +78,10 @@ public class UserController {
         String code = map.get("code").toString();
 
         //get saved verification code from session
-        Object codeInSession = session.getAttribute(phone);
+        //Object codeInSession = session.getAttribute(phone);
+
+        //get saved verification code from redis
+        Object codeInSession = redisTemplate.opsForValue().get(phone);
 
         //compare codes (saved in session == submitted in page)
         if(codeInSession != null && codeInSession.equals(code)){
@@ -87,6 +98,10 @@ public class UserController {
                 userService.save(user);
             }
             session.setAttribute("user", user.getId());
+
+            //if log in success, delete verification code in redis
+            redisTemplate.delete(phone);
+
             return R.success(user);
         }
         return R.error("Log in failed!");
