@@ -13,9 +13,11 @@ import com.sailfinn.reggie.service.DishService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 /**
@@ -33,6 +35,9 @@ public class DishController {
 
     @Autowired
     private CategoryService categoryService;
+
+    @Autowired
+    private RedisTemplate redisTemplate;
     /**
      * add dish
      * @param dishDto
@@ -43,6 +48,10 @@ public class DishController {
         log.info(dishDto.toString());
 
         dishService.saveWithFlavor(dishDto);
+
+        //clean redis cache
+        String key = "dish_" + dishDto.getCategoryId() + "_1";
+        redisTemplate.delete(key);
 
         return R.success("Dish added!");
     }
@@ -124,6 +133,10 @@ public class DishController {
 
         dishService.updateWithFlavor(dishDto);
 
+        //clean redis cache
+        String key = "dish_" + dishDto.getCategoryId() + "_1";
+        redisTemplate.delete(key);
+
         return R.success("Dish revised!");
     }
 
@@ -150,6 +163,21 @@ public class DishController {
 
     @GetMapping("/list")
     public R<List<DishDto>> list(Dish dish){
+
+        List<DishDto> dishDtoList = null;
+
+        //generate key dynamically
+        String key = "dish_" + dish.getCategoryId() + "_" + dish.getStatus();
+
+        //get cache data from redis
+        dishDtoList = (List<DishDto>) redisTemplate.opsForValue().get(key);
+
+        if(dishDtoList != null){
+            //if cache exist, return it
+            return R.success(dishDtoList);
+        }
+
+        //else, get data from sql
         //构造查询条件
         LambdaQueryWrapper<Dish> lambdaQueryWrapper = new LambdaQueryWrapper<>();
         lambdaQueryWrapper.eq(dish.getCategoryId() != null, Dish::getCategoryId, dish.getCategoryId());
@@ -162,7 +190,7 @@ public class DishController {
 
         //BeanUtils.copyProperties(list, dishDtoList, "");
 
-        List<DishDto> dishDtoList = list.stream().map((item) -> {
+        dishDtoList = list.stream().map((item) -> {
             DishDto dishDto = new DishDto();
 
             BeanUtils.copyProperties(item, dishDto);
@@ -185,6 +213,9 @@ public class DishController {
 
             return dishDto;
         }).collect(Collectors.toList());
+
+        //if data is not in redis cache, find them in sql and SAVE IN CACHE
+        redisTemplate.opsForValue().set(key, dishDtoList, 60, TimeUnit.MINUTES);
 
         return R.success(dishDtoList);
     }

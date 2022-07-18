@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb386767-c600-4647-b801-5afa89f415c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sailfinn/reggie/config/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reggie_take_out.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sailfinn/reggie/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sailfinn/reggie/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sailfinn/reggie/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sailfinn/reggie/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/front/page/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/front/page/order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/front/page/pay-success.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/front/page/pay-success.html" afterDir="false" />
+    <list default="true" id="fb386767-c600-4647-b801-5afa89f415c9" name="Changes" comment="save verification code in redis in linux">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sailfinn/reggie/controller/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sailfinn/reggie/controller/DishController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sailfinn/reggie/controller/DishController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sailfinn/reggie/controller/DishController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,19 +33,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/zhoushengqi/IdeaUltiProjects/src/main/java/com/sailfinn/reggie/config",
-    "spring.configuration.checksum": "31ee954601a2ac7573b0782bc2eec0b0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/zhoushengqi/IdeaUltiProjects/src/main/java/com/sailfinn/reggie/config&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;31ee954601a2ac7573b0782bc2eec0b0&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -77,8 +73,19 @@
       <option name="presentableId" value="Default" />
       <updated>1658091253380</updated>
       <workItem from="1658091256331" duration="401000" />
-      <workItem from="1658091670218" duration="167000" />
+      <workItem from="1658091670218" duration="228000" />
+      <workItem from="1658091918587" duration="107000" />
+      <workItem from="1658092049822" duration="223000" />
+      <workItem from="1658167797784" duration="2001000" />
     </task>
+    <task id="LOCAL-00001" summary="save verification code in redis in linux">
+      <created>1658091894331</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1658091894332</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,5 +101,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="save verification code in redis in linux" />
+    <option name="LAST_COMMIT_MESSAGE" value="save verification code in redis in linux" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/sailfinn/reggie/controller/DishController.java</url>
+          <line>133</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
