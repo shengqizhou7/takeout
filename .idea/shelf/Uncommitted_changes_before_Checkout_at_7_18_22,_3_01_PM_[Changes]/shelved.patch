@@ -1,0 +1,67 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"fb386767-c600-4647-b801-5afa89f415c9\" name=\"Changes\" comment=\"save verification code in redis in linux\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/sailfinn/reggie/controller/DishController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/sailfinn/reggie/controller/DishController.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/sailfinn/reggie/controller/DishController.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/sailfinn/reggie/controller/DishController.class\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2C5T48HP1b6k6atVZztnKqEx69N\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,\n    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,\n    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,\n    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\n    &quot;last_opened_file_path&quot;: &quot;/Users/zhoushengqi/IdeaUltiProjects/src/main/java/com/sailfinn/reggie/config&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,\n    &quot;spring.configuration.checksum&quot;: &quot;31ee954601a2ac7573b0782bc2eec0b0&quot;\n  }\n}</component>\n  <component name=\"ReactorSettings\">\n    <option name=\"notificationShown\" value=\"true\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src/main/java/com/sailfinn/reggie/config\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"ReggieApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\">\n      <module name=\"reggie_take_out\" />\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.sailfinn.reggie.ReggieApplication\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"fb386767-c600-4647-b801-5afa89f415c9\" name=\"Changes\" comment=\"\" />\n      <created>1658091253380</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1658091253380</updated>\n      <workItem from=\"1658091256331\" duration=\"401000\" />\n      <workItem from=\"1658091670218\" duration=\"228000\" />\n      <workItem from=\"1658091918587\" duration=\"107000\" />\n      <workItem from=\"1658092049822\" duration=\"223000\" />\n      <workItem from=\"1658167797784\" duration=\"2001000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"save verification code in redis in linux\">\n      <created>1658091894331</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1658091894332</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"save verification code in redis in linux\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"save verification code in redis in linux\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/main/java/com/sailfinn/reggie/controller/DishController.java</url>\n          <line>133</line>\n          <option name=\"timeStamp\" value=\"3\" />\n        </line-breakpoint>\n      </breakpoints>\n    </breakpoint-manager>\n  </component>\n</project>
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,11 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="fb386767-c600-4647-b801-5afa89f415c9" name="Changes" comment="save verification code in redis in linux">
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sailfinn/reggie/controller/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sailfinn/reggie/controller/DishController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/com/sailfinn/reggie/controller/DishController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sailfinn/reggie/controller/DishController.class" afterDir="false" />
+-    </list>
++    <list default="true" id="fb386767-c600-4647-b801-5afa89f415c9" name="Changes" comment="save dish cache in redis in linux" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -76,7 +72,7 @@
+       <workItem from="1658091670218" duration="228000" />
+       <workItem from="1658091918587" duration="107000" />
+       <workItem from="1658092049822" duration="223000" />
+-      <workItem from="1658167797784" duration="2001000" />
++      <workItem from="1658167797784" duration="2345000" />
+     </task>
+     <task id="LOCAL-00001" summary="save verification code in redis in linux">
+       <created>1658091894331</created>
+@@ -85,7 +81,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1658091894332</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="save dish cache in redis in linux">
++      <created>1658170775072</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1658170775073</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -104,17 +107,7 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="save verification code in redis in linux" />
+-    <option name="LAST_COMMIT_MESSAGE" value="save verification code in redis in linux" />
+-  </component>
+-  <component name="XDebuggerManager">
+-    <breakpoint-manager>
+-      <breakpoints>
+-        <line-breakpoint enabled="true" type="java-line">
+-          <url>file://$PROJECT_DIR$/src/main/java/com/sailfinn/reggie/controller/DishController.java</url>
+-          <line>133</line>
+-          <option name="timeStamp" value="3" />
+-        </line-breakpoint>
+-      </breakpoints>
+-    </breakpoint-manager>
++    <MESSAGE value="save dish cache in redis in linux" />
++    <option name="LAST_COMMIT_MESSAGE" value="save dish cache in redis in linux" />
+   </component>
+ </project>
+\ No newline at end of file
