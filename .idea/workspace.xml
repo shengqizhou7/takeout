@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb386767-c600-4647-b801-5afa89f415c9" name="Changes" comment="save verification code in redis in linux">
+    <list default="true" id="fb386767-c600-4647-b801-5afa89f415c9" name="Changes" comment="Using Spring Cache to save combo cache">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sailfinn/reggie/ReggieApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sailfinn/reggie/ReggieApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sailfinn/reggie/common/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sailfinn/reggie/common/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sailfinn/reggie/controller/SetmealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sailfinn/reggie/controller/SetmealController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sailfinn/reggie/controller/DishController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sailfinn/reggie/controller/DishController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sailfinn/reggie/controller/SetmealController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sailfinn/reggie/controller/SetmealController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +18,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="v1.0ulti" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -83,6 +79,8 @@
       <workItem from="1658092049822" duration="223000" />
       <workItem from="1658167797784" duration="2001000" />
       <workItem from="1658275295191" duration="2122000" />
+      <workItem from="1658366096444" duration="1379000" />
+      <workItem from="1658369655752" duration="857000" />
     </task>
     <task id="LOCAL-00001" summary="save verification code in redis in linux">
       <created>1658091894331</created>
@@ -110,6 +108,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="save verification code in redis in linux" />
-    <option name="LAST_COMMIT_MESSAGE" value="save verification code in redis in linux" />
+    <MESSAGE value="Using Spring Cache to save combo cache" />
+    <option name="LAST_COMMIT_MESSAGE" value="Using Spring Cache to save combo cache" />
   </component>
 </project>
