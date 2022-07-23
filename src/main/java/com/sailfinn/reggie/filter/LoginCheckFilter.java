@@ -40,7 +40,11 @@ public class LoginCheckFilter implements Filter {
                 "/front/**",
                 "/common/**",
                 "/user/sendMsg",//text verification on mobile end
-                "/user/login"//login on mobile end
+                "/user/login",//login on mobile end
+                "/doc.html",
+                "/webjars/**",
+                "/swagger-resources",
+                "/v2/api-docs"
         };
 
         //check if current request needs to be dealt with(which means should we check if user is logged in)
